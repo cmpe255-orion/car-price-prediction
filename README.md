@@ -1,14 +1,17 @@
 # Car Price Prediction
 
-## Presentation Video
-https://drive.google.com/file/d/10VEOTdA9LbEyZOtinrI99-Efre40mXUJ/view?usp=sharing
-
 ## Table of contents
+* [Links](#links)
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Platforms](#platforms)
 * [Contributors](#contributors)
 * [Status](#status)
+
+## Links
+- Presentation Video: https://drive.google.com/file/d/10VEOTdA9LbEyZOtinrI99-Efre40mXUJ/view?usp=sharing
+- Presentation Slides: https://docs.google.com/presentation/d/1lu274MQmIl5GzEaifO5zC2N36HoKM0nIyDPKPFq_igs/edit?usp=sharing
+- Academic Paper: https://docs.google.com/document/d/1Nr6jb0Wh8sOLZVCs1BGmaT067EqElSehYD7kRxxY9Jc/edit?usp=sharing
 
 ## General info
 Car purchases are a significant part of an individual’s life, and choosing the right car can have a significant impact on a person’s quality of life. Since a vehicle is a major ordeal, variables such as car price, mileage, brand, model, and year are all important factors for customers looking to choose a car. Since a vehicle’s value can depreciate over time and that different models have different rates of depreciation, customers must also have good knowledge of car prices in order to identify the cars which will be of most value to them. With the advancement of technology especially in the field of machine learning and data mining, humans can now be complemented with machine knowledge to make the best decisions. In this project, the team has used machine learning algorithms to identify and predict the car prices for used cars so that potential customers can get a better idea of which cars to purchase to guarantee their satisfaction.
@@ -31,7 +34,6 @@ To best understand the variation of the data that is being worked with, it is im
 * Babu Rajendran
 * Hung Le
 * Tingjia Zhang
-
 
 ## Status
 Project is: _Completed_
