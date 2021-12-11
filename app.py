@@ -22,10 +22,10 @@ def predict():
         mileage=int(request.form['mileage'])
         owners=int(request.form['owners'])
         accidents=int(request.form['accidents'])
-        age=2021-year
-        depreciation=45
+        age= int(2021 - year)
+        X_test = [year,mileage,accidents,owners,age,original_price]
         
-        prediction=model.predict([[year,mileage,accidents,owners,age,original_price,depreciation]])
+        prediction= model.predict([[year,mileage,accidents,owners,age,original_price    ]])
         output=round(prediction[0],2)
         if output<0:
             return render_template('index.html',prediction_text="Car cannot be sold")
