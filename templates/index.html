@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+</head>
+
+<body>
+   
+    <div>
+      <h1 style="font-size:50px">Predict Car Prices</h1>
+            <h3 style="font-family:Arial, Helvetica, sans-serif">Predict the price of your car</h3>
+    </div>
+
+     <style>
+        
+        body, html {
+          height: 100%;
+          margin: 0;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .hero-image {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/carback.jpg');
+          height: 50%;
+          background-position: bottom;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+        
+        .hero-text {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+        }
+        
+    </style>
+
+
+    <div style="color:	rgb(163, 172, 133)">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Please enter the Car Details</h2>
+            <h3>Year</h3>
+            <input id="first" name="year" type="number ">
+            <h3>Make</h3>
+            <input id="first" name="make">
+            <h3>Model</h3>
+            <input id="first" name="model">
+            <h3>Original Sticker Price</h3><input id="second" name="original_price" required="required">
+            <h3>Mileage</h3><input id="third" name="mileage" required="required">
+            <h3>Any Accidents?</h3><input id="third" name="accidents" required="required">
+            <h3>Owners </h3><input id="fourth" name="owners" required="required">
+            <br><br><button id="sub" type="submit ">Calculate the Selling Price</button>
+            <br>
+
+
+
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+
+
+
+    <style>
+	body {
+            background-color: #794f77;
+            text-align: center;
+            padding: 0px;
+	    font-family: cursive;
+        }
+
+        #research {
+            font-size: 18px;
+            width: 200px;
+            height: 23px;
+            top: 23px;
+        }
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            text-align: center;
+            background-color: rgb(1, 54, 48);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+        #fuel {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+        
+        #fuel:hover {
+            background-color: #FFD700;
+        }
+        
+        #research {
+            width: 150px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #research:hover {
+            background-color: #FFD700;
+        }
+        
+        #resea {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #resea:hover {
+            background-color: #FFD700;
+        }
+        
+        #sub {
+            background-color: #f78205;
+            font-family:'Courier New', monospace;
+            font-weight: bold;
+            width: 180px;
+            height: 60px;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 18px;
+            color: white;
+        }
+        
+        #sub:hover {
+            background-color: #cf1804;
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
