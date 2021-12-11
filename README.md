@@ -1,5 +1,8 @@
 # Car Price Prediction
 
+## Presentation Video
+https://drive.google.com/file/d/10VEOTdA9LbEyZOtinrI99-Efre40mXUJ/view?usp=sharing
+
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
